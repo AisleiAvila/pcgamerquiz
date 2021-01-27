@@ -7,6 +7,7 @@ import GitHubCorner from '../src/components/GitHubCorner';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
+import { Button } from "../src/components/Button";
 
 
 // const BackgroundImage = styled.div`
@@ -63,7 +64,7 @@ export default function Home() {
                             <input type="radio" id="indico" name="question01" value="5" />
                             <label for="indico">Indico</label>
                         </Widget.Content>
-                        <button type="submit">Confirmar</button>
+                        <Button type="submit">Confirmar</Button>
                     </Widget.Content>
                 </Widget>
 
