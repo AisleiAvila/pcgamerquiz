@@ -11,6 +11,7 @@ import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import { Button } from "../src/components/Button";
 import { Input } from "../src/components/Input";
+import { ListQuiz } from "../src/components/ListQuiz";
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -69,11 +70,16 @@ export default function Home() {
         </Widget>
 
         <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-            <p>Conhecimento sobre futebol</p>
-            <p>Conhecimento sobre música</p>
-          </Widget.Content>
+					<Widget.Content>
+						<h1>Quizes da galera</h1>
+
+						<p>
+							Dá uma olhada nesses quizes incríveis que o pessoal
+							da Imersão fez:
+						</p>
+						<ListQuiz />
+					</Widget.Content>
+
         </Widget>
         <Footer />
       </QuizContainer>
