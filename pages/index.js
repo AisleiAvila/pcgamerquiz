@@ -9,6 +9,8 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import { Button } from "../src/components/Button";
+import { Input } from "../src/components/Input";
 
 // const BackgroundImage = styled.div`
 //   background-image: url(${db.bg});
@@ -41,7 +43,7 @@ export default function Home() {
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Teste: Conhecimentos sobre oceanos</h1>
+            <h1>Teste: Conhecimento sobre oceanos</h1>
           </Widget.Header>
           <Widget.Content>
             <form onSubmit={function (infosDoEvento) {
@@ -50,7 +52,7 @@ export default function Home() {
               console.log('Fazendo uma submissão por meio do react');
             }}
             >
-              <input
+              <Input
                 onChange={function (infosDoEvento) {
                   console.log(infosDoEvento.target.value);
                   // State
@@ -59,9 +61,9 @@ export default function Home() {
                 }}
                 placeholder="Digite seu nome"
               />
-              <button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
@@ -69,8 +71,8 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>
-            <p>Conhecimentos sobre futebol</p>
-            <p>Conhecimentos sobre música</p>
+            <p>Conhecimento sobre futebol</p>
+            <p>Conhecimento sobre música</p>
           </Widget.Content>
         </Widget>
         <Footer />
